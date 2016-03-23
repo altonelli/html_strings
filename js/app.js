@@ -1,7 +1,7 @@
 console.log('Sanity Check: JS is working!');
 
 $(document).ready(function(){
-
+  
   renderGitHubLinks(data.students);
 
 
@@ -15,7 +15,7 @@ function renderGitHubLinks(students){
   students.forEach(function(el){
     var link = buildGitHubLink(el.first_name,el.last_name,el.github_username);
     $('#student_list').append(link);
-  })
+  });
 }
 
 
